@@ -27,7 +27,7 @@ This changed version enable all operations to be done using REST services, these
 
 
 | Service Name  | Number of operations | Method | Operation Path | Parameters |
-| :-: | :-: | :-: | :-- | :--: |
+| :----: | :----: | :----: | :---- | :----: |
 | AdminUpdate  | 2 | POST | /adminUpdate\_Vx0 | [Table one](#table-one) |
 | | | POST  | /adminUpdate\_VxA | [Table one](#table-one) |
 | | | | | |
@@ -80,12 +80,13 @@ This changed version enable all operations to be done using REST services, these
 
 #### Table one:
 
- | Parameters  | Location | name | Type | required  |
- | :-: | :-: | :-- | :-- | :---:  |
- | 1º | Query | i\_id | Int | True  |
- | 2º | Query  | cost |  double | True  |
- | 3º | Query  | image |  String | False  |
- | 4º | Query  | thumbnail | String | False  |
+
+| Parameters  | Location | name | Type | required  |
+| :----: | :----: | :---- | :---- | :----: |
+| 1º | Query | i\_id | Int | True  |
+| 2º | Query  | cost |  double | True  |
+| 3º | Query  | image |  String | False  |
+| 4º | Query  | thumbnail | String | False  |
 
 
 
@@ -93,7 +94,7 @@ This changed version enable all operations to be done using REST services, these
 
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :---- | :----:  |
 | 1º | Request Body |  | JSON | True  |
  
  * JSON example for **CreateNewCustomer** service:
@@ -142,38 +143,38 @@ This changed version enable all operations to be done using REST services, these
 #### Table three:
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :---- | :----:  |
 | 1º | Query | search_key | String | True  |
  
 #### Table four:
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :---- | :----:  |
 | 1º | Query | subject | String | True  |
 
 #### Table five:
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :--- | :----:  |
 | 1º | Query | UNAME | String | True  |
  
 #### Table six:
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :---- | :----:  |
 | 1º | Query | c\_uname | String | True  |
  
   
 #### Table seven:
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :---- | :----:  |
 | 1º | Query | C\_UNAME | String | True  |
  
 #### Table eight:
 
 | Parameters  | Location | name | Type | required  |
-| :-: | :-: | :-- | :-- | :---:  |
+| :----: | :----: | :---- | :---- | :----:  |
 | 1º | Query | C\_ID | String | True  |
 
 
