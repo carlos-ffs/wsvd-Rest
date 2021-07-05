@@ -189,7 +189,7 @@ In `data` folder is available a **tpc.sql** file, it is a script to fill a Postg
 * Command:
 `sudo psql -h hostIPaddress -U userName -d databaseName -f /path/to/tpc.sql`
 
-	- Example: `sudo psql -h localhost -U postgres -d wsvd -f ~/Documents/tpc.sql`
+    - Example: `sudo psql -h localhost -U postgres -d wsvd -f ~/Documents/tpc.sql`
 
 ### 2. Setup up Database.java file:
 * In `wsvd-Rest/src/main/java/pt/uc/dei/wsvdbench/util/` folder you must configure the class **Database.java** according to the database and configuration used in the [**first step**](#1-setup-up-postgreSQL-database).
@@ -210,16 +210,16 @@ For tomcat we will need postgresql driver in order to communicate with the datab
 
 * In `jarNeeded` folder is postgresql-42.2.22.jar, this jar file needs to be in **tomcat's** `lib` folder.
 
-	- To find where your tomcat is located you can run something like this:
+    - To find where your tomcat is located you can run something like this:
 `sudo find / -name "tomcat"`. Mine is in `/opt/tomcat/` folder.
 
-	- **postgresql-42.2.22.jar** file should be **located** in  `/path/to/tomcat/lib` folder. Example according to my tomcat's path `/opt/tomcat/lib`.
+    - **postgresql-42.2.22.jar** file should be **located** in  `/path/to/tomcat/lib` folder. Example according to my tomcat's path `/opt/tomcat/lib`.
 
 ### 5. Build the .war package
 
 * To build the .war package go to where pom.xml is located, probably in `wsvd-Rest` folder, and run this command:
 
-	- `mvn install` or `mvn package`
+    - `mvn install` or `mvn package`
 
 The .war package will be located in `target` folder.
 
@@ -227,6 +227,6 @@ The .war package will be located in `target` folder.
 
 * Copy the .war package gotten in [step 5](#5-build-the-war-package) to Tomcat `webapps` folder.
 
-	- Example of `webapps` folder path: `/opt/tomcat/webapps`
+    - Example of `webapps` folder path: `/opt/tomcat/webapps`
 
 
