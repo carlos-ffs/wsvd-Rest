@@ -26,48 +26,48 @@ This changed version enable all operations to be done using REST services, these
 
 
 
-Service Name  | Number of operations | Method | Operation Path | Parameters
-:-: | :-: | :-: | :-- | :--:
- AdminUpdate  | 2 | POST | /adminUpdate\_Vx0 | [Table one](#table-one)
- | | POST  | /adminUpdate\_VxA | [Table one](#table-one)
- | | | |
- CreateNewCustomer | 6 | POST | /createNewCustomer\_Vx0  | [Table two](#Table-two)
- | | POST  | /createNewCustomer\_VxA | [Table two](#table-two)
- | | POST  | /createNewCustomer\_Vx078 | [Table two](#table-two)
- | | POST  | /createNewCustomer\_Vx103 | [Table two](#table-two)
- | | POST  | /createNewCustomer\_Vx113 | [Table two](#table-two)
- | | POST  | /createNewCustomer\_Vx113 | [Table two](#table-two)
- | | POST  | /createNewCustomer\_Vx132 | [Table two](#table-two)
- | | | |
- CreateShoppingCart | 2 | POST | /createShoppingCart\_Vx0  | [Table two](#table-two)
- | | POST  | /createShoppingCart\_VxA | [Table two](#table-two)
- | | | |
- DoAuthorSearch | 2 | GET | /doAuthorSearch\_VxA  | [Table three](#table-three)
- | | GET  | /doAuthorSearch\_Vx0 | [Table three](#table-three)
- | | | |
- DoSubjectSearch | 2 | GET | /doSubjectSearch\_Vx0   | [Table three](#table-three)
- | | GET  | /doSubjectSearch\_VxA | [Table three](#table-three)
- | | | |
- DoTitleSearch | 2 | GET | /doTitleSearch\_Vx0  |  [Table three](#table-three)
- | | GET  | /doTitleSearch\_VxA | [Table three](#table-three)
- | | | |
- GetBestSellers | 2 | GET | /getBestSellers\_Vx0  |  [Table four](#table-four)
- | | GET  | /getBestSellers\_VxA | [Table four](#table-four)
- | | | |
- GetCustomer | 2 | GET | /getCustomer\_Vx0  |  [Table five](#table-five)
- | | GET  | /getCustomer\_VxA | [Table five](#table-five)
- | | | |
- GetMostRecentOrder | 2 | GET | /getMostRecentOrder\_Vx0 |    [Table six](#table-six)
- | | GET  | /getMostRecentOrder\_VxA | [Table six](#table-six)
- | | | |
- GetNewProducts | 2 | GET | /getNewProducts\_Vx0   |  [Table four](#table-four)
- | | GET  | /getNewProducts\_VxA | [Table four](#table-four)
- | | | |
- GetPassword | 2 | GET | /getPassword\_Vx0 |    [Table seven](#table-seven)
- | | GET  | /getPassword\_VxA | [Table seven](#table-seven)
- | | | |
- GetUsername | 2 | GET | /getUserName\_Vx0   |  [Table eight](#table-eigth)
- | | GET  | /getUserName\_VxA | [Table eight](#table-eigth)
+| Service Name  | Number of operations | Method | Operation Path | Parameters |
+| :-: | :-: | :-: | :-- | :--: |
+| AdminUpdate  | 2 | POST | /adminUpdate\_Vx0 | [Table one](#table-one) |
+| | | POST  | /adminUpdate\_VxA | [Table one](#table-one) |
+| | | | | |
+| CreateNewCustomer | 6 | POST | /createNewCustomer\_Vx0  | [Table two](#Table-two) |
+| | | POST  | /createNewCustomer\_VxA | [Table two](#table-two) |
+| | | POST  | /createNewCustomer\_Vx078 | [Table two](#table-two) |
+| | | POST  | /createNewCustomer\_Vx103 | [Table two](#table-two) |
+| | | POST  | /createNewCustomer\_Vx113 | [Table two](#table-two) |
+| | | POST  | /createNewCustomer\_Vx113 | [Table two](#table-two) |
+| | | POST  | /createNewCustomer\_Vx132 | [Table two](#table-two) |
+| | | | | |
+| CreateShoppingCart | 2 | POST | /createShoppingCart\_Vx0  | [Table two](#table-two) |
+| | | POST  | /createShoppingCart\_VxA | [Table two](#table-two) |
+| | | | | |
+| DoAuthorSearch | 2 | GET | /doAuthorSearch\_VxA  | [Table three](#table-three) |
+| | | GET  | /doAuthorSearch\_Vx0 | [Table three](#table-three) |
+| | | | | |
+| DoSubjectSearch | 2 | GET | /doSubjectSearch\_Vx0   | [Table three](#table-three) |
+| | | GET  | /doSubjectSearch\_VxA | [Table three](#table-three) |
+| | | | | |
+| DoTitleSearch | 2 | GET | /doTitleSearch\_Vx0  |  [Table three](#table-three) |
+| | | GET  | /doTitleSearch\_VxA | [Table three](#table-three) |
+| | | | | |
+| GetBestSellers | 2 | GET | /getBestSellers\_Vx0  |  [Table four](#table-four) |
+| | | GET  | /getBestSellers\_VxA | [Table four](#table-four) |
+| | | | | |
+| GetCustomer | 2 | GET | /getCustomer\_Vx0  |  [Table five](#table-five) |
+| | | GET  | /getCustomer\_VxA | [Table five](#table-five) |
+| | | | | |
+| GetMostRecentOrder | 2 | GET | /getMostRecentOrder\_Vx0 |    [Table six](#table-six) |
+| | | GET  | /getMostRecentOrder\_VxA | [Table six](#table-six) |
+| | | | | |
+| GetNewProducts | 2 | GET | /getNewProducts\_Vx0   |  [Table four](#table-four) |
+| | | GET  | /getNewProducts\_VxA | [Table four](#table-four) |
+| | | | | |
+| GetPassword | 2 | GET | /getPassword\_Vx0 |    [Table seven](#table-seven) |
+| | | GET  | /getPassword\_VxA | [Table seven](#table-seven) |
+| | | | | |
+| GetUsername | 2 | GET | /getUserName\_Vx0   |  [Table eight](#table-eigth) |
+| | | GET  | /getUserName\_VxA | [Table eight](#table-eigth) |
  
  
  
@@ -80,21 +80,21 @@ Service Name  | Number of operations | Method | Operation Path | Parameters
 
 #### Table one:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | i\_id | Int | True 
- 2º | Query  | cost |  double | True 
- 3º | Query  | image |  String | False 
- 4º | Query  | thumbnail | String | False 
+ | Parameters  | Location | name | Type | required  |
+ | :-: | :-: | :-- | :-- | :---:  |
+ | 1º | Query | i\_id | Int | True  |
+ | 2º | Query  | cost |  double | True  |
+ | 3º | Query  | image |  String | False  |
+ | 4º | Query  | thumbnail | String | False  |
 
 
 
 #### Table two:
 
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Request Body |  | JSON | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Request Body |  | JSON | True  |
  
  * JSON example for **CreateNewCustomer** service:
  
@@ -141,40 +141,40 @@ Service Name  | Number of operations | Method | Operation Path | Parameters
 
 #### Table three:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | search_key | String | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Query | search_key | String | True  |
  
 #### Table four:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | subject | String | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Query | subject | String | True  |
 
 #### Table five:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | UNAME | String | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Query | UNAME | String | True  |
  
 #### Table six:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | c\_uname | String | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Query | c\_uname | String | True  |
  
   
 #### Table seven:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | C\_UNAME | String | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Query | C\_UNAME | String | True  |
  
 #### Table eight:
 
- Parameters  | Location | name | Type | required 
- :-: | :-: | :-- | :-- | :---: 
- 1º | Query | C\_ID | String | True 
+| Parameters  | Location | name | Type | required  |
+| :-: | :-: | :-- | :-- | :---:  |
+| 1º | Query | C\_ID | String | True  |
 
 
 
