@@ -20,18 +20,18 @@ This changed version enable all operations to be done using REST services, these
 
 Service Name  | Number of operations | Method | Service Path | Parameters
 :-: | :-: | :-: | :-- | :-:
-AdminUpdate  | 2 | POST | /AdminUpdate/adminUpdate\_Vx0  <br />  /AdminUpdate/adminUpdate\_VxA | Location: Query  <br />  name: i\_id  <br />  Type: (int)  <br />  --------------  <br />  Location: Query  <br />  name: cost  <br />  Type: (double)  <br />  --------------  <br />  Location: Query  <br />  name: image  <br />  Type: (String)  <br />  --------------  <br />  Location: Query  <br />  name: thumbnail  <br />  Type: (String)
-CreateNewCustomer  | 6 | POST | /CreateNewCustomer/createNewCustomer\_Vx0  <br />  /CreateNewCustomer/createNewCustomer\_VxA  <br />  /CreateNewCustomer/createNewCustomer\_Vx078  <br />  /CreateNewCustomer/createNewCustomer\_Vx103  <br />  /CreateNewCustomer/createNewCustomer\_Vx113  <br />  /CreateNewCustomer/createNewCustomer\_Vx132  <br />  | JSON
-CreateShoppingCart  | 2 | POST | /CreateShoppingCart/createShoppingCart\_Vx0  <br />  /CreateShoppingCart/createShoppingCart\_VxA | JSON
-DoAuthorSearch  | 2 | GET | /DoAuthorSearch/doAuthorSearch\_VxA  <br />  /DoAuthorSearch/doAuthorSearch\_Vx0 | Location: Query  <br />  name: search_key  <br />  Type: (String)
-DoSubjectSearch  | 2 | GET | /DoSubjectSearch/doSubjectSearch\_Vx0  <br />  /DoSubjectSearch/doSubjectSearch\_VxA | Location: Query  <br />  name: search_key  <br />  Type: (String)
-DoTitleSearch  | 2 | GET | /DoTitleSearch/doTitleSearch\_Vx0  <br />  /DoTitleSearch/doTitleSearch\_VxA| Location: Query  <br />  name: search_key  <br />  Type: (String)
-GetBestSellers  | 2 | GET | /GetBestSellers/getBestSellers\_Vx0  <br />  /GetBestSellers/getBestSellers\_VxA| Location: Query  <br />  name: subject  <br />  Type: (String)
-GetCustomer  | 2 | GET | /GetCustomer/getCustomer\_Vx0  <br />  /GetCustomer/getCustomer\_VxA | Location: Query  <br />  name: UNAME  <br />  Type: (String)
-GetMostRecentOrder  | 2 | GET | /GetMostRecentOrder/getMostRecentOrder\_Vx0  <br />  /GetMostRecentOrder/getMostRecentOrder\_VxA | Location: Query  <br />  name: c_uname  <br />  Type: (String)
-GetNewProducts  | 2 | GET | /GetNewProducts/getNewProducts\_Vx0  <br />  /GetNewProducts/getNewProducts\_VxA | Location: Query  <br />  name: subject  <br />  Type: (String)
-GetPassword  | 2 | GET | /GetPassword/getPassword\_Vx0  <br />  /GetPassword/getPassword\_VxA | Location: Query  <br />  name: C_UNAME  <br />  Type: (String)
-GetUsername  | 2 | GET | /GetUsername/getUserName\_Vx0  <br />  /GetUsername/getUserName\_VxA | Location: Query  <br />  name: C_ID  <br />  Type: (String)
+AdminUpdate  | 2 | POST | /AdminUpdate/adminUpdate\_Vx0 <br /> /AdminUpdate/adminUpdate\_VxA | Location: Query <br /> name: i\_id <br /> Type: (int) <br /> -------------- <br /> Location: Query <br /> name: cost <br /> Type: (double) <br /> -------------- <br /> Location: Query <br /> name: image <br /> Type: (String) <br /> -------------- <br /> Location: Query <br /> name: thumbnail <br /> Type: (String)
+CreateNewCustomer  | 6 | POST | /CreateNewCustomer/createNewCustomer\_Vx0 <br /> /CreateNewCustomer/createNewCustomer\_VxA <br /> /CreateNewCustomer/createNewCustomer\_Vx078 <br /> /CreateNewCustomer/createNewCustomer\_Vx103 <br /> /CreateNewCustomer/createNewCustomer\_Vx113 <br /> /CreateNewCustomer/createNewCustomer\_Vx132 <br /> | JSON
+CreateShoppingCart  | 2 | POST | /CreateShoppingCart/createShoppingCart\_Vx0 <br /> /CreateShoppingCart/createShoppingCart\_VxA | JSON
+DoAuthorSearch  | 2 | GET | /DoAuthorSearch/doAuthorSearch\_VxA <br /> /DoAuthorSearch/doAuthorSearch\_Vx0 | Location: Query <br /> name: search_key <br /> Type: (String)
+DoSubjectSearch  | 2 | GET | /DoSubjectSearch/doSubjectSearch\_Vx0 <br /> /DoSubjectSearch/doSubjectSearch\_VxA | Location: Query <br /> name: search_key <br /> Type: (String)
+DoTitleSearch  | 2 | GET | /DoTitleSearch/doTitleSearch\_Vx0 <br /> /DoTitleSearch/doTitleSearch\_VxA| Location: Query <br /> name: search_key <br /> Type: (String)
+GetBestSellers  | 2 | GET | /GetBestSellers/getBestSellers\_Vx0 <br /> /GetBestSellers/getBestSellers\_VxA| Location: Query <br /> name: subject <br /> Type: (String)
+GetCustomer  | 2 | GET | /GetCustomer/getCustomer\_Vx0 <br /> /GetCustomer/getCustomer\_VxA | Location: Query <br /> name: UNAME <br /> Type: (String)
+GetMostRecentOrder  | 2 | GET | /GetMostRecentOrder/getMostRecentOrder\_Vx0 <br /> /GetMostRecentOrder/getMostRecentOrder\_VxA | Location: Query <br /> name: c_uname <br /> Type: (String)
+GetNewProducts  | 2 | GET | /GetNewProducts/getNewProducts\_Vx0 <br /> /GetNewProducts/getNewProducts\_VxA | Location: Query <br /> name: subject <br /> Type: (String)
+GetPassword  | 2 | GET | /GetPassword/getPassword\_Vx0 <br /> /GetPassword/getPassword\_VxA | Location: Query <br /> name: C_UNAME <br /> Type: (String)
+GetUsername  | 2 | GET | /GetUsername/getUserName\_Vx0 <br /> /GetUsername/getUserName\_VxA | Location: Query <br /> name: C_ID <br /> Type: (String)
 
 ## How to run it
 
