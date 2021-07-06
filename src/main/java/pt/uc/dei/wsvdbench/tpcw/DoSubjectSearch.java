@@ -20,7 +20,7 @@ import pt.uc.dei.wsvdbench.tpcw.versions.DoAuthorSearch_VxA;
 import pt.uc.dei.wsvdbench.tpcw.versions.DoSubjectSearch_Vx0;
 import pt.uc.dei.wsvdbench.tpcw.versions.DoSubjectSearch_VxA;
 
-@Path("DoAuthorSearch")
+@Path("DoSubjectSearch")
 public class DoSubjectSearch {
 
 

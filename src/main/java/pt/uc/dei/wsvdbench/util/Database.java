@@ -40,9 +40,10 @@ public class Database {
     private static final int DATABASE_CONNECTION_POOL_SIZE = 10;
     private static final int DATABASE_CONNECTION_MAX_USAGE = 100;
 
-    private static final String server = "localhost";
+    private static final String server = "192.168.1.50";
     private static final int port = 5432;
-    private static final String sid = "wsvd";
+    private static final String dbName = "wsvd";
+    private static final String sid = "orcl";
     private static final String userName = "postgres";
     private static final String passwd = "password";
     //private static final String driverName = "oracle.jdbc.driver.OracleDriver";
@@ -51,7 +52,7 @@ public class Database {
 
     //For postgres, postgresql-42.2.22.jar must be in tomcat's "lib" folder
     private static final String driverName = "org.postgresql.Driver";
-    private static final String url = "jdbc:postgresql://" + server + ":" + port + "/wsvd";
+    private static final String url = "jdbc:postgresql://" + server + ":" + port + "/" + dbName;
 
 
     private static BlockingQueue<Connection> pooll;

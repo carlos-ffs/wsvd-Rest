@@ -22,10 +22,9 @@ import pt.uc.dei.wsvdbench.tpcw.versions.GetBestSellers_Vx0;
 import pt.uc.dei.wsvdbench.tpcw.versions.GetBestSellers_VxA;
 
 
-@Path("DoTitleSearch")
+@Path("GetBestSellers")
 public class GetBestSellers {
 
-    @WebMethod(operationName = "getBestSellers_Vx0")
 
     @GET
     @Path("getBestSellers_Vx0")

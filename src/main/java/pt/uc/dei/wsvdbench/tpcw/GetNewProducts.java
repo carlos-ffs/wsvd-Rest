@@ -20,14 +20,6 @@ import pt.uc.dei.wsvdbench.tpcw.versions.GetBestSellers_VxA;
 import pt.uc.dei.wsvdbench.tpcw.versions.GetNewProducts_Vx0;
 import pt.uc.dei.wsvdbench.tpcw.versions.GetNewProducts_VxA;
 
-/**
- * WS - Vulnerability Detection Tools Benchmark
- * TPC - W Benchmark Services
- *
- *
- *
- * @author nmsa@dei.uc.pt
- */
 @Path("GetNewProducts")
 public class GetNewProducts {
 
