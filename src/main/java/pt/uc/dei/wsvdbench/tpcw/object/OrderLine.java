@@ -59,7 +59,6 @@ import java.sql.ResultSet;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(name = "OrderLine", namespace = "http://tpcw.wsvdbench.dei.uc.pt/")
 public class OrderLine implements Serializable {
 
     public OrderLine() {
@@ -78,18 +77,17 @@ public class OrderLine implements Serializable {
             //ex.printStackTrace();
         }
     }
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
     public int ol_i_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_title;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_publisher;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double i_cost;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int ol_qty;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double ol_discount;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String ol_comments;
 }

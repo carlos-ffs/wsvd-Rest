@@ -104,53 +104,53 @@ public class Book implements Serializable {
         }
     }
     // From Item
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_title;
 //  public int i_a_id;   // Redundant
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date i_pub_Date;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_publisher;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_subject;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_desc;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_related1;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_related2;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_related3;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_related4;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_related5;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_thumbnail;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_image;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double i_srp;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double i_cost;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date i_avail;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_isbn;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int i_page;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_backing;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String i_dimensions;
     // From Author
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int a_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String a_fname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String a_lname;
 }
 

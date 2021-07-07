@@ -50,7 +50,8 @@ public class CreateNewCustomer {
                     @ApiResponse(responseCode = "400", description = "Request malformed")}
             )
     public Response createNewCustomer_Vx0(
-            @RequestBody(description = "Customer object in json", required = true,
+            @RequestBody(description = "Customer object in json",
+                    required = true,
                     content =
                     @Content(schema = @Schema(implementation = Customer.class)))
                     String cust){
@@ -93,7 +94,8 @@ public class CreateNewCustomer {
                     @ApiResponse(responseCode = "400", description = "Request malformed")}
     )
     public Response createNewCustomer_VxA(
-            @RequestBody(description = "Customer object in json", required = true,
+            @RequestBody(description = "Customer object in json",
+                    required = true,
             content =
             @Content(schema = @Schema(implementation = Customer.class)))
                                                       String cust){
@@ -136,7 +138,8 @@ public class CreateNewCustomer {
                     @ApiResponse(responseCode = "400", description = "Request malformed")}
     )
     public Response createNewCustomer_Vx078(
-            @RequestBody(description = "Customer object in json", required = true,
+            @RequestBody(description = "Customer object in json",
+                    required = true,
             content =
             @Content(schema = @Schema(implementation = Customer.class)))
                                                         String cust) {
@@ -177,7 +180,8 @@ public class CreateNewCustomer {
                     @ApiResponse(responseCode = "400", description = "Request malformed")}
     )
     public Response createNewCustomer_Vx103(
-            @RequestBody(description = "Customer object in json", required = true,
+            @RequestBody(description = "Customer object in json",
+                    required = true,
             content =
             @Content(schema = @Schema(implementation = Customer.class)))
                                                         String cust) {
@@ -218,7 +222,8 @@ public class CreateNewCustomer {
                     @ApiResponse(responseCode = "400", description = "Request malformed")}
     )
     public Response createNewCustomer_Vx113(
-            @RequestBody(description = "Customer object in json", required = true,
+            @RequestBody(description = "Customer object in json",
+                    required = true,
             content =
             @Content(schema = @Schema(implementation = Customer.class)))
                                                         String cust) {
@@ -259,7 +264,8 @@ public class CreateNewCustomer {
                     @ApiResponse(responseCode = "400", description = "Request malformed")}
     )
     public Response createNewCustomer_Vx132(
-            @RequestBody(description = "Customer object in json", required = true,
+            @RequestBody(description = "Customer object in json",
+                    required = true,
                     content =
                     @Content(schema = @Schema(implementation = Customer.class)))
                     String cust) {

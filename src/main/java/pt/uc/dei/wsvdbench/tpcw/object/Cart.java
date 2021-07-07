@@ -60,20 +60,18 @@ import java.sql.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(name = "Cart", namespace = "http://tpcw.wsvdbench.dei.uc.pt/")
 public class Cart implements Serializable {
 
     public Cart() {
     }
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
     public double SC_SUB_TOTAL;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double SC_TAX;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double SC_SHIP_COST;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double SC_TOTAL;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = CartLine.class)
+
     public List<CartLine> lines;
 
     public Cart(ResultSet rs, double C_DISCOUNT) throws java.sql.SQLException {

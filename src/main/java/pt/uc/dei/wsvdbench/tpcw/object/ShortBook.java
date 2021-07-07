@@ -84,13 +84,9 @@ public class ShortBook implements Serializable {
         }
     }
     // From Item
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
     public int i_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String i_title;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String a_fname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String a_lname;
 }
 

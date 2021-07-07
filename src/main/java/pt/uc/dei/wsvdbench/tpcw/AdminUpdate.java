@@ -21,7 +21,11 @@ public class AdminUpdate {
     @GET
     @Path("test")
     public String adminUpdate_Vx0(@QueryParam("word")  String word) {
-        return word;
+
+        if(word == null)
+            return "";
+        else
+            return word;
     }
 
 

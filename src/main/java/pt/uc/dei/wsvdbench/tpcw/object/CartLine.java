@@ -60,20 +60,19 @@ import javax.xml.bind.annotation.XmlType;
  * you give them.
  *
  ************************************************************************/
-@XmlType(name = "CartLine", namespace = "http://tpcw.wsvdbench.dei.uc.pt/")
 public class CartLine implements Serializable {
 
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String scl_title;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double scl_cost;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double scl_srp;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String scl_backing;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int scl_qty;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int scl_i_id;
 
     public CartLine() {

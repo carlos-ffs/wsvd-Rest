@@ -105,59 +105,59 @@ public class Order implements Serializable {
             //ex.printStackTrace();
         }
     }
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int o_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_fname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_lname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_passwd;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_uname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_phone;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_email;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date o_date;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double o_subtotal;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double o_tax;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double o_total;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String o_ship_type;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date o_ship_date;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String o_status;
     //Billing address
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String bill_addr_street1;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String bill_addr_street2;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String bill_addr_state;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String bill_addr_zip;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String bill_co_name;
     //Shipping address
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String ship_addr_street1;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String ship_addr_street2;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String ship_addr_state;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String ship_addr_zip;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String ship_co_name;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String cx_type;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = OrderLine.class)
+
     public final List<OrderLine> order_lines;
 
     public String getOrderInJson(){

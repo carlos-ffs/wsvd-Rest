@@ -12,6 +12,7 @@ import javax.ws.rs.core.Response;
 
 import com.google.gson.JsonObject;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -27,13 +28,16 @@ public class GetCustomer {
     @GET
     @Path("getCustomer_Vx0")
     @Produces(MediaType.APPLICATION_JSON)
-    @Operation(summary = "Get customer by UNAME",
+    @Operation(summary = "Get customer by UNAME (c_uname in database) in json",
             responses = {
-                    @ApiResponse(description = "The customer",
+                    @ApiResponse(responseCode = "200", description =  "The customer object in json",
                             content = @Content(mediaType = "application/json",
                                     schema = @Schema(implementation = Customer.class))),
-                    @ApiResponse(responseCode = "404", description = "Customer not found")})
-    public Response getCustomer_Vx0(@QueryParam("UNAME") String UNAME) {
+                    @ApiResponse(responseCode = "404", description = "Customer not found"),
+                    @ApiResponse(responseCode = "500", description = "Something really bad must have happened in our server")
+            }
+    )
+    public Response getCustomer_Vx0(@Parameter(required = true) @QueryParam("UNAME") String UNAME) {
 
         Customer c = new GetCustomer_Vx0().getCustomer(UNAME);
         if(c == null){
@@ -55,13 +59,16 @@ public class GetCustomer {
     @GET
     @Path("getCustomer_VxA")
     @Produces(MediaType.APPLICATION_JSON)
-    @Operation(summary = "Get customer by UNAME",
+    @Operation(summary = "Get customer by UNAME (c_uname in database) in json",
             responses = {
-                    @ApiResponse(description = "The customer",
+                    @ApiResponse(responseCode = "200",description = "The customer object in json",
                             content = @Content(mediaType = "application/json",
                                     schema = @Schema(implementation = Customer.class))),
-                    @ApiResponse(responseCode = "404", description = "Customer not found")})
-    public Response getCustomer_VxA(@QueryParam("UNAME") String UNAME) {
+                    @ApiResponse(responseCode = "404", description = "Customer not found"),
+                    @ApiResponse(responseCode = "500", description = "Something really bad must have happened in our server")
+            }
+    )
+    public Response getCustomer_VxA(@Parameter(required = true) @QueryParam("UNAME") String UNAME) {
 
         Customer c = new GetCustomer_VxA().getCustomer(UNAME);
         if(c == null){

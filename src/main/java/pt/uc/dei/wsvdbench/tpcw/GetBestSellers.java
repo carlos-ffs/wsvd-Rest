@@ -15,6 +15,12 @@ import javax.ws.rs.core.Response;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import pt.uc.dei.wsvdbench.tpcw.object.Book;
 import pt.uc.dei.wsvdbench.tpcw.object.ShortBook;
 import pt.uc.dei.wsvdbench.tpcw.versions.DoTitleSearch_Vx0;
@@ -29,7 +35,22 @@ public class GetBestSellers {
     @GET
     @Path("getBestSellers_Vx0")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getBestSellers_Vx0(@QueryParam("subject") String subject) {
+    @Operation(
+            summary = "Obtain all books where subject is (i_subject in database) equal to String subject (input)",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "List of books (short information about the books) in json with subject equal to the String subject (input)",
+                            content = @Content(
+                                    mediaType = "application/json",
+                                    array = @ArraySchema(schema = @Schema(implementation = ShortBook.class))
+                            )
+                    ),
+                    @ApiResponse(responseCode = "404", description = "No books found for subject equals to input String subject"),
+                    @ApiResponse(responseCode = "500", description = "Something really bad must have happened in our server")
+            }
+    )
+    public Response getBestSellers_Vx0(@Parameter(required = true) @QueryParam("subject") String subject) {
 
         List<ShortBook> books = new GetBestSellers_Vx0().getBestSellers(subject);
 
@@ -43,16 +64,38 @@ public class GetBestSellers {
         Gson gson = new Gson();
         String json = gson.toJson(target, listType);
 
-        return Response.status(Response.Status.OK)
-                .entity(json)
-                .build();
+        if(target.size() == 0){
+            return Response.status(Response.Status.NOT_FOUND)
+                    .entity(json)
+                    .build();
+        }
+        else{
+            return Response.status(Response.Status.OK)
+                    .entity(json)
+                    .build();
+        }
     }
 
 
     @GET
     @Path("getBestSellers_VxA")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getBestSellers_VxA(@QueryParam("subject") String subject) {
+    @Operation(
+            summary = "Obtain all books where subject is (i_subject in database) equal to String subject (input)",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "List of books (short information about the books) in json with subject equal to the String subject (input)",
+                            content = @Content(
+                                    mediaType = "application/json",
+                                    array = @ArraySchema(schema = @Schema(implementation = ShortBook.class))
+                            )
+                    ),
+                    @ApiResponse(responseCode = "404", description = "No books found for subject equals to input String subject"),
+                    @ApiResponse(responseCode = "500", description = "Something really bad must have happened in our server")
+            }
+    )
+    public Response getBestSellers_VxA(@Parameter(required = true) @QueryParam("subject") String subject) {
 
         List<ShortBook> books = new GetBestSellers_VxA().getBestSellers(subject);
 
@@ -66,8 +109,15 @@ public class GetBestSellers {
         Gson gson = new Gson();
         String json = gson.toJson(target, listType);
 
-        return Response.status(Response.Status.OK)
-                .entity(json)
-                .build();
+        if(target.size() == 0){
+            return Response.status(Response.Status.NOT_FOUND)
+                    .entity(json)
+                    .build();
+        }
+        else{
+            return Response.status(Response.Status.OK)
+                    .entity(json)
+                    .build();
+        }
     }
 }
