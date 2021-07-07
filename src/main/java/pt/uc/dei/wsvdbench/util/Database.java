@@ -45,7 +45,7 @@ public class Database {
     private static final String dbName = "wsvd";
     private static final String sid = "orcl";
     private static final String userName = "postgres";
-    private static final String passwd = "password";
+    private static final String passwd = "postgres";
     //private static final String driverName = "oracle.jdbc.driver.OracleDriver";
     //private static final String url = "jdbc:oracle:thin:@" + server + ":" + port + ":" + sid;
 

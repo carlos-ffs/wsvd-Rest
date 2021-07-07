@@ -117,15 +117,32 @@
                     </execution>
                 </executions>-->
             </plugin>
+
+            <plugin>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <version>2.1.10</version>
+                <configuration>
+                    <outputFileName>openapi</outputFileName>
+                    <outputPath>${project.build.directory}/generatedtest</outputPath>
+                    <outputFormat>YAML</outputFormat>
+                    <configurationFilePath>${project.basedir}/src/main/resources/configurationFile.yaml</configurationFilePath>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>resolve</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-    <!--
-            **************************** END_BUILD *******************************
-    -->
 
 
     <repositories>
-      
+
         <repository>
             <id>jboss</id>
             <url>http://repository.jboss.org/maven2</url>
@@ -185,30 +202,30 @@
             <scope>compile</scope>
         </dependency> -->
 
-       <!-- <dependency>
-            <groupId>wsdbench-component</groupId>
-            <artifactId>wsdbench-component</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/install/wsdbench-component.jar</systemPath>
-        </dependency>
+        <!-- <dependency>
+             <groupId>wsdbench-component</groupId>
+             <artifactId>wsdbench-component</artifactId>
+             <version>1.0</version>
+             <scope>system</scope>
+             <systemPath>${project.basedir}/install/wsdbench-component.jar</systemPath>
+         </dependency>
 
-        <dependency>
-            <groupId>wsdbench-distributable-objects</groupId>
-            <artifactId>wsdbench-distributable-objects</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/install/wsdbench-distributable-objects.jar</systemPath>
-        </dependency>
+         <dependency>
+             <groupId>wsdbench-distributable-objects</groupId>
+             <artifactId>wsdbench-distributable-objects</artifactId>
+             <version>1.0</version>
+             <scope>system</scope>
+             <systemPath>${project.basedir}/install/wsdbench-distributable-objects.jar</systemPath>
+         </dependency>
 
-        <dependency>
-            <groupId>wsdbench-loader</groupId>
-            <artifactId>wsdbench-loader</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/install/wsdbench-loader.jar</systemPath>
-        </dependency>
-         -->
+         <dependency>
+             <groupId>wsdbench-loader</groupId>
+             <artifactId>wsdbench-loader</artifactId>
+             <version>1.0</version>
+             <scope>system</scope>
+             <systemPath>${project.basedir}/install/wsdbench-loader.jar</systemPath>
+         </dependency>
+          -->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -275,16 +292,7 @@
 
 
 
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-server</artifactId>
-            <version>2.17</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet-core</artifactId>
-            <version>2.17</version>
-        </dependency>
+
 
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -302,10 +310,46 @@
             <version>2.12.3</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-jaxrs</artifactId>
+            <version>1.5.8</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet-core</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+
+
+
+        <dependency>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-jaxrs2</artifactId>
+            <version>2.1.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
 
     </dependencies>
-    
-    
-   
-</project>
 
+
+
+</project>

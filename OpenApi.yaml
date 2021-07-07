@@ -1,0 +1,549 @@
+openapi: 3.0.1
+info:
+  title: Sample API
+  description: API description
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/wsvd_bench_war/rest
+  variables: {}
+paths:
+  /AdminUpdate/test:
+    application/xml: {}
+    get:
+      operationId: adminUpdate_Vx0
+      parameters:
+      - name: word
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*':
+              schema:
+                type: string
+  /AdminUpdate/adminUpdate_Vx0:
+    post:
+      operationId: adminUpdate_Vx0_1
+      parameters:
+      - name: i_id
+        in: query
+        schema:
+          type: integer
+          format: int32
+      - name: cost
+        in: query
+        schema:
+          type: number
+          format: double
+      - name: image
+        in: query
+        schema:
+          type: string
+      - name: thumbnail
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /AdminUpdate/adminUpdate_VxA:
+    post:
+      operationId: adminUpdate_VxA
+      parameters:
+      - name: i_id
+        in: query
+        schema:
+          type: integer
+          format: int32
+      - name: cost
+        in: query
+        schema:
+          type: number
+          format: double
+      - name: image
+        in: query
+        schema:
+          type: string
+      - name: thumbnail
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /CreateNewCustomer/createNewCustomer_Vx0:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx0
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx078:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx078
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx103:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx103
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx113:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx113
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx132:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx132
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_VxA:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_VxA
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateShoppingCart/createShoppingCart_Vx0:
+    post:
+      operationId: createShoppingCart_Vx0
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /CreateShoppingCart/createShoppingCart_VxA:
+    post:
+      operationId: createShoppingCart_VxA
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /DoAuthorSearch/doAuthorSearch_Vx0:
+    get:
+      operationId: doAuthorSearch_Vx0
+      parameters:
+      - name: search_key
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /DoAuthorSearch/doAuthorSearch_VxA:
+    get:
+      operationId: doAuthorSearch_VxA
+      parameters:
+      - name: search_key
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /DoSubjectSearch/doSubjectSearch_Vx0:
+    get:
+      operationId: doSubjectSearch_Vx0
+      parameters:
+      - name: search_key
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /DoSubjectSearch/doSubjectSearch_VxA:
+    get:
+      operationId: doSubjectSearch_VxA
+      parameters:
+      - name: search_key
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /DoTitleSearch/doTitleSearch_Vx0:
+    get:
+      operationId: doTitleSearch_Vx0
+      parameters:
+      - name: search_key
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /DoTitleSearch/doTitleSearch_VxA:
+    get:
+      operationId: doTitleSearch_VxA
+      parameters:
+      - name: search_key
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetBestSellers/getBestSellers_Vx0:
+    get:
+      operationId: getBestSellers_Vx0
+      parameters:
+      - name: subject
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetBestSellers/getBestSellers_VxA:
+    get:
+      operationId: getBestSellers_VxA
+      parameters:
+      - name: subject
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetCustomer/getCustomer_Vx0:
+    get:
+      summary: Get customer by UNAME
+      operationId: getCustomer_Vx0
+      parameters:
+      - name: UNAME
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "404":
+          description: Customer not found
+  /GetCustomer/getCustomer_VxA:
+    get:
+      summary: Get customer by UNAME
+      operationId: getCustomer_VxA
+      parameters:
+      - name: UNAME
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "404":
+          description: Customer not found
+  /GetMostRecentOrder/getMostRecentOrder_Vx0:
+    get:
+      operationId: getMostRecentOrder_Vx0
+      parameters:
+      - name: c_uname
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetMostRecentOrder/getMostRecentOrder_VxA:
+    get:
+      operationId: getMostRecentOrder_VxA
+      parameters:
+      - name: c_uname
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetNewProducts/getNewProducts_Vx0:
+    get:
+      operationId: getNewProducts_Vx0
+      parameters:
+      - name: subject
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetNewProducts/getNewProducts_VxA:
+    get:
+      operationId: getNewProducts_VxA
+      parameters:
+      - name: subject
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /GetPassword/getPassword_Vx0:
+    get:
+      operationId: getPassword_Vx0
+      parameters:
+      - name: C_UNAME
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /GetPassword/getPassword_VxA:
+    get:
+      operationId: getPassword_VxA
+      parameters:
+      - name: C_UNAME
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /GetUsername/getUserName_Vx0:
+    get:
+      operationId: getUserName_Vx0
+      parameters:
+      - name: C_ID
+        in: query
+        schema:
+          type: integer
+          format: int32
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /GetUsername/getUserName_VxA:
+    get:
+      operationId: getUserName_VxA
+      parameters:
+      - name: C_ID
+        in: query
+        schema:
+          type: integer
+          format: int32
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+components:
+  schemas:
+    Customer:
+      type: object
+      properties:
+        c_id:
+          type: integer
+          format: int32
+        c_passwd:
+          type: string
+        c_fname:
+          type: string
+        c_lname:
+          type: string
+        c_phone:
+          type: string
+        c_email:
+          type: string
+        c_since:
+          type: string
+          format: date
+        c_last_visit:
+          type: string
+          format: date
+        c_login:
+          type: string
+          format: date
+        c_expiration:
+          type: string
+          format: date
+        c_discount:
+          type: number
+          format: double
+        c_balance:
+          type: number
+          format: double
+        c_ytd_pmt:
+          type: number
+          format: double
+        c_birthdate:
+          type: string
+          format: date
+        c_data:
+          type: string
+        addr_id:
+          type: integer
+          format: int32
+        addr_street1:
+          type: string
+        addr_street2:
+          type: string
+        addr_city:
+          type: string
+        addr_state:
+          type: string
+        addr_zip:
+          type: string
+        addr_co_id:
+          type: integer
+          format: int32
+        co_name:
+          type: string
+        customerInJson:
+          type: string
+        c_uname:
+          type: string

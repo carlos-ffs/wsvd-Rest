@@ -1,4 +1,5 @@
 package pt.uc.dei.wsvdbench.tpcw.object;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -60,59 +61,52 @@ import java.util.Date;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-//glorified struct used for passing customer info around.
-@XmlType(name = "Customer", namespace = "http://tpcw.wsvdbench.dei.uc.pt/")
 public class Customer implements Serializable {
 
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
     public int c_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
+    @JsonProperty("c_uname")
     public String c_uname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_passwd;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_fname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_lname;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_phone;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_email;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date c_since;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date c_last_visit;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date c_login;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date c_expiration;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double c_discount;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double c_balance;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Double.class)
+
     public double c_ytd_pmt;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Date.class)
+
     public Date c_birthdate;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String c_data;
     //From the addess table
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
+
     public int addr_id;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String addr_street1;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
+
     public String addr_street2;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String addr_city;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String addr_state;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String addr_zip;
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = Integer.class)
     public int addr_co_id;
     //From the country table
-    @XmlElement(namespace = "http://tpcw.wsvdbench.dei.uc.pt/", type = String.class)
     public String co_name;
 
     public Customer() {
