@@ -6,9 +6,6 @@ This was originally a Benchmarking Vulnerability Detection Tools for Web Service
 
 Some changes were made in order to make this project a RESTFull API for futher testing with [bBOXRT](https://git.dei.uc.pt/cnl/bBOXRT/tree/master) tool. **[TPC-W](http://tpc.org/tpcw/default5.asp)**, **[TPC-APP](http://tpc.org/tpc_app/default5.asp)** and **[TPC-C](http://www.tpc.org/tpcc/default5.asp)** will be use with these new changes. 
 
-"TPC-W was a web server and database performance benchmark, proposed by Transaction Processing Performance Council. 
-This benchmark defined the complete Web-based shop for searching, browsing and ordering books. The system under testing needed to provide the implementation of this shop." [[wiki]](https://en.wikipedia.org/wiki/TPC-W)
-
 This changed version enable all operations to be done using REST services, these services will be tested with [bBOXRT](https://git.dei.uc.pt/cnl/bBOXRT/tree/master) tool and specify with a [OpenAPI](https://swagger.io/specification/) (Swagger) document.
 
 
