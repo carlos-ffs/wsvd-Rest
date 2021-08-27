@@ -1,0 +1,3 @@
+mvn install:install-file -DgroupId=wsdbench-component -DartifactId=wsdbench-component -Dversion=1.0 -Dpackaging=jar -Dfile=wsdbench-component.jar -DgeneratePom=true
+mvn install:install-file -DgroupId=wsdbench-distributable-objects -DartifactId=wsdbench-distributable-objects -Dversion=1.0 -Dpackaging=jar -Dfile=wsdbench-distributable-objects.jar -DgeneratePom=true
+mvn install:install-file -DgroupId=wsdbench-loader -DartifactId=wsdbench-loader -Dversion=1.0 -Dpackaging=jar -Dfile=wsdbench-loader.jar -DgeneratePom=true

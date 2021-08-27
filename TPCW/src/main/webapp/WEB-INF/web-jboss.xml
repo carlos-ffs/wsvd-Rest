@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+        <!--
+        WSVDBench
+        Web Services Vulnerability Detection Tools Benchmark
+    -->
+    <!--
+        4 Web services from the TPC-App Performance Benchmark
+    -->
+    <servlet>
+        <servlet-name>WsvdbTPCAppChangePaymentMethod</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcapp.ChangePaymentMethod</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCAppChangePaymentMethod</servlet-name>
+        <url-pattern>/WsvdbTPCAppChangePaymentMethodService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCAppNewCustomer</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcapp.NewCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCAppNewCustomer</servlet-name>
+        <url-pattern>/WsvdbTPCAppNewCustomerService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCAppNewProducts</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcapp.NewProducts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCAppNewProducts</servlet-name>
+        <url-pattern>/WsvdbTPCAppNewProductsService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCAppProductDetail</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcapp.ProductDetail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCAppProductDetail</servlet-name>
+        <url-pattern>/WsvdbTPCAppProductDetailService</url-pattern>
+    </servlet-mapping>
+
+
+    <!--
+        12 Web services adapted from one implementation of TPC-W Benchmark
+    -->
+
+    <servlet>
+        <servlet-name>WsvdbTPCWAdminUpdate</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.AdminUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWAdminUpdate</servlet-name>
+        <url-pattern>/WsvdbTPCWAdminUpdateService</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>WsvdbTPCWCreateNewCustomer</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.CreateNewCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWCreateNewCustomer</servlet-name>
+        <url-pattern>/WsvdbTPCWCreateNewCustomerService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWCreateShoppingCart</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.CreateShoppingCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWCreateShoppingCart</servlet-name>
+        <url-pattern>/WsvdbTPCWCreateShoppingCartService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWDoAuthorSearch</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.DoAuthorSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWDoAuthorSearch</servlet-name>
+        <url-pattern>/WsvdbTPCWDoAuthorSearchService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWDoSubjectSearch</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.DoSubjectSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWDoSubjectSearch</servlet-name>
+        <url-pattern>/WsvdbTPCWDoSubjectSearchService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWDoTitleSearch</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.DoTitleSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWDoTitleSearch</servlet-name>
+        <url-pattern>/WsvdbTPCWDoTitleSearchService</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>WsvdbTPCWGetBestSellers</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.GetBestSellers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWGetBestSellers</servlet-name>
+        <url-pattern>/WsvdbTPCWGetBestSellersService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWGetCustomer</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.GetCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWGetCustomer</servlet-name>
+        <url-pattern>/WsvdbTPCWGetCustomerService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWGetMostRecentOrder</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.GetMostRecentOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWGetMostRecentOrder</servlet-name>
+        <url-pattern>/WsvdbTPCWGetMostRecentOrderService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWGetNewProducts</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.GetNewProducts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWGetNewProducts</servlet-name>
+        <url-pattern>/WsvdbTPCWGetNewProductsService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWGetPassword</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.GetPassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWGetPassword</servlet-name>
+        <url-pattern>/WsvdbTPCWGetPasswordService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCWGetUsername</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcw.GetUsername</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCWGetUsername</servlet-name>
+        <url-pattern>/WsvdbTPCWGetUsernameService</url-pattern>
+    </servlet-mapping>
+    
+    <!--
+        12 Web services adapted from one implementation of TPC-C Benchmark
+    -->
+    <servlet>
+        <servlet-name>WsvdbTPCCDelivery</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcc.Delivery</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCCDelivery</servlet-name>
+        <url-pattern>/WsvdbTPCCDeliveryService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCCNewOrder</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcc.NewOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCCNewOrder</servlet-name>
+        <url-pattern>/WsvdbTPCCNewOrderService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCCOrderStatus</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcc.OrderStatus</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCCOrderStatus</servlet-name>
+        <url-pattern>/WsvdbTPCCOrderStatusService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCCPayment</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcc.Payment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCCPayment</servlet-name>
+        <url-pattern>/WsvdbTPCCPaymentService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WsvdbTPCCStockLevel</servlet-name>
+        <servlet-class>pt.uc.dei.wsvdbench.tpcc.StockLevel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WsvdbTPCCStockLevel</servlet-name>
+        <url-pattern>/WsvdbTPCCStockLevelService</url-pattern>
+    </servlet-mapping>
+    <!--
+        ///// END OF WSVDBench Services
+    -->
+</web-app>
+
+
+

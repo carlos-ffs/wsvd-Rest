@@ -1,0 +1,1346 @@
+openapi: 3.0.1
+info:
+  title: Sample API
+  description: API description
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/TPCC_war/tpcc
+  variables: {}
+paths:
+  /Delivery/deliveryTransaction_Vx0:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx0
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx051:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx051
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx075:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx075
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx099:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx099
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx123:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx123
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx138:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx138
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx154:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx154
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_Vx176:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_Vx176
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /Delivery/deliveryTransaction_VxA:
+    get:
+      summary: Gets Delivery Result
+      operationId: deliveryTransaction_VxA
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: o_carrier_id
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Delivery Result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeliveryResult'
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_Vx0:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_Vx0
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_Vx056:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_Vx056
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_Vx081:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_Vx081
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_Vx103:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_Vx103
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_Vx119:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_Vx119
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_Vx144:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_Vx144
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewOrder/newOrderTransaction_VxA:
+    post:
+      summary: Creates new order transaction
+      operationId: newOrderTransaction_VxA
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewOrderTransactionAux'
+        required: true
+      responses:
+        "200":
+          description: New order transaction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShortOrder'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_Vx0:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_Vx0
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_Vx046:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_Vx046
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_Vx066:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_Vx066
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_Vx096:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_Vx096
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_Vx122:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_Vx122
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_Vx143:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_Vx143
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /OrderStatus/orderStatusTransaction_VxA:
+    get:
+      summary: Get order status transaction information
+      operationId: orderStatusTransaction_VxA
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_last
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: c_by_name
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        "200":
+          description: Order status transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx0:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx0
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx043:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx043
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx057:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx057
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx078:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx078
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx091:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx091
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx115:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx115
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx136:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx136
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx177:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx177
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx212:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx212
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx241:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx241
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx257:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx257
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_Vx290:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_Vx290
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/paymentTransaction_VxA:
+    get:
+      summary: Get Payment transaction information
+      operationId: paymentTransaction_VxA
+      requestBody:
+        description: Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentAux'
+        required: true
+      responses:
+        "200":
+          description: Payment transaction response in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResult'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/stockLevelTransaction_Vx0:
+    get:
+      summary: Get Stock Level transaction information
+      operationId: stockLevelTransaction_Vx0
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: threshold
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: Stock Level transaction response in json
+          content:
+            '*/*':
+              schema:
+                type: integer
+                format: int64
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/stockLevelTransaction_Vx033:
+    get:
+      summary: Get Stock Level transaction information
+      operationId: stockLevelTransaction_Vx033
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: threshold
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: Stock Level transaction response in json
+          content:
+            '*/*':
+              schema:
+                type: integer
+                format: int64
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/stockLevelTransaction_Vx057:
+    get:
+      summary: Get Stock Level transaction information
+      operationId: stockLevelTransaction_Vx057
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: threshold
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: Stock Level transaction response in json
+          content:
+            '*/*':
+              schema:
+                type: integer
+                format: int64
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /Payment/stockLevelTransaction_VxA:
+    get:
+      summary: Get Stock Level transaction information
+      operationId: stockLevelTransaction_VxA
+      parameters:
+      - name: w_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: d_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: threshold
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: Stock Level transaction response in json
+          content:
+            '*/*':
+              schema:
+                type: integer
+                format: int64
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+components:
+  schemas:
+    DeliveryResult:
+      type: object
+      properties:
+        w_id:
+          type: string
+        o_carrier_id:
+          type: string
+        skippedDeliveries:
+          type: integer
+          format: int32
+        districtDeliveryList:
+          type: array
+          items:
+            $ref: '#/components/schemas/DistrictDelivery'
+        deliveryResultInJson:
+          type: string
+    DistrictDelivery:
+      type: object
+      properties:
+        district:
+          type: integer
+          format: int32
+        orderid:
+          type: integer
+          format: int64
+    ShortOrder:
+      type: object
+      properties:
+        o_id:
+          type: integer
+          format: int64
+        total_amount:
+          type: number
+          format: double
+        shortOrderInJson:
+          type: string
+    NewOrderLongList:
+      type: object
+      properties:
+        longList:
+          type: array
+          items:
+            type: integer
+            format: int64
+    NewOrderTransactionAux:
+      type: object
+      properties:
+        w_id:
+          type: string
+        d_id:
+          type: string
+        c_id:
+          type: string
+        o_ol_cnt:
+          type: integer
+          format: int32
+        o_all_local:
+          type: integer
+          format: int32
+        itemIDs:
+          $ref: '#/components/schemas/NewOrderLongList'
+        supplierWarehouseIDs:
+          $ref: '#/components/schemas/NewOrderLongList'
+        orderQuantities:
+          $ref: '#/components/schemas/NewOrderLongList'
+    Order:
+      type: object
+      properties:
+        o_id:
+          type: integer
+          format: int64
+        c_id:
+          type: string
+        entdate:
+          type: string
+          format: date-time
+        o_carrier_id:
+          type: integer
+          format: int64
+        orderLines:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderLine'
+        orderInJson:
+          type: string
+    OrderLine:
+      type: object
+      properties:
+        ol_supply_w_id:
+          type: integer
+          format: int64
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        ol_i_id:
+          type: integer
+          format: int64
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        ol_quantity:
+          type: integer
+          format: int64
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        ol_amount:
+          type: number
+          format: double
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        ol_delivery_d:
+          type: string
+          format: date-time
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+    PaymentResult:
+      type: object
+      properties:
+        w_id:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        w_street_1:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        w_street_2:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        w_city:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        w_state:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        w_zip:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        d_id:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        d_street_1:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        d_street_2:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        d_city:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        d_state:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        d_zip:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_id:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_first:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_middle:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_last:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_street_1:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_street_2:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_city:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_state:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_zip:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_since:
+          type: string
+          format: date-time
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_credit:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_discount:
+          type: number
+          format: double
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_phone:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        h_amount:
+          type: number
+          format: double
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_credit_lim:
+          type: number
+          format: double
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_balance:
+          type: number
+          format: double
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        c_data:
+          type: string
+          xml:
+            namespace: http://tpcc.wsvdbench.dei.uc.pt/
+        paymentResultInJson:
+          type: string
+    PaymentAux:
+      type: object
+      properties:
+        w_id:
+          type: string
+        c_w_id:
+          type: string
+        h_amount:
+          type: number
+          format: double
+        d_id:
+          type: string
+        c_d_id:
+          type: string
+        c_id:
+          type: string
+        c_last:
+          type: string
+        c_by_name:
+          type: boolean
+  

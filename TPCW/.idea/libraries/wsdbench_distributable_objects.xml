@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wsdbench-distributable-objects">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/install/wsdbench-distributable-objects.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

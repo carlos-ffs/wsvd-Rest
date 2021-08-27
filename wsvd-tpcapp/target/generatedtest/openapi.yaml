@@ -1,0 +1,480 @@
+openapi: 3.0.1
+paths:
+  /swagger:
+    get:
+      operationId: getListingYaml
+      responses:
+        default:
+          description: default response
+          content:
+            application/yaml: {}
+  /swagger.{type}:
+    get:
+      operationId: getListing
+      parameters:
+      - name: type
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+            application/yaml: {}
+  /application.wadl/{path}:
+    get:
+      operationId: geExternalGrammar
+      parameters:
+      - name: path
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/xml: {}
+  /application.wadl:
+    get:
+      operationId: getWadl
+      responses:
+        default:
+          description: default response
+          content:
+            application/vnd.sun.wadl+xml: {}
+            application/xml: {}
+  /ChangePaymentMethod/changePaymentMethod_Vx0:
+    post:
+      summary: Change Payment Method and returns current payment method
+      operationId: changePaymentMethod_Vx0
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePaymentMethodInput'
+        required: true
+      responses:
+        "200":
+          description: Payment Method changed
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /ChangePaymentMethod/changePaymentMethod_VxA:
+    post:
+      summary: Change Payment Method and returns current payment method
+      operationId: changePaymentMethod_VxA
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePaymentMethodInput'
+        required: true
+      responses:
+        "200":
+          description: Payment Method changed
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewCustomer/newCustomer_Vx0:
+    post:
+      summary: Create new customer and returns ID
+      operationId: newCustomer_Vx0
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewCustomerInput'
+        required: true
+      responses:
+        "200":
+          description: Customer was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewCustomerOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewCustomer/newCustomer_Vx101:
+    post:
+      summary: Create new customer and returns ID
+      operationId: newCustomer_Vx101
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewCustomerInput'
+        required: true
+      responses:
+        "200":
+          description: Customer was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewCustomerOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewCustomer/newCustomer_Vx138:
+    post:
+      summary: Create new customer and returns ID
+      operationId: newCustomer_Vx138
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewCustomerInput'
+        required: true
+      responses:
+        "200":
+          description: Customer was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewCustomerOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewCustomer/newCustomer_Vx158:
+    post:
+      summary: Create new customer and returns ID
+      operationId: newCustomer_Vx158
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewCustomerInput'
+        required: true
+      responses:
+        "200":
+          description: Customer was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewCustomerOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewCustomer/newCustomer_Vx197:
+    post:
+      summary: Create new customer and returns ID
+      operationId: newCustomer_Vx197
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewCustomerInput'
+        required: true
+      responses:
+        "200":
+          description: Customer was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewCustomerOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewCustomer/newCustomer_VxA:
+    post:
+      summary: Create new customer and returns ID
+      operationId: newCustomer_VxA
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewCustomerInput'
+        required: true
+      responses:
+        "200":
+          description: Customer was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewCustomerOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /NewProducts/newProducts_Vx0:
+    get:
+      summary: Gets a list with the new Products
+      operationId: newProducts_Vx0
+      parameters:
+      - name: cutOffDuration
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: subjectString
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: itemLimit
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: List of new Products
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewProductsOutput'
+        "500":
+          description: Something really bad must have happened in our server
+  /NewProducts/newProducts_VxA:
+    get:
+      summary: Gets a list with the new Products
+      operationId: newProducts_VxA
+      parameters:
+      - name: cutOffDuration
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: subjectString
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: itemLimit
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: List of new Products
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewProductsOutput'
+        "500":
+          description: Something really bad must have happened in our server
+  /ProductDetail/productDetail_Vx0:
+    post:
+      summary: "Gets a list with the detailed Products, these products have ids equals\
+        \ to the ones in the request json"
+      operationId: productDetail_Vx0
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductDetailInput'
+        required: true
+      responses:
+        "200":
+          description: List of detailed Products
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductDetailOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+  /ProductDetail/productDetail_VxA:
+    post:
+      summary: "Gets a list with the detailed Products, these products have ids equals\
+        \ to the ones in the request json"
+      operationId: productDetail_VxA
+      requestBody:
+        description: Product Detail input in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductDetailInput'
+        required: true
+      responses:
+        "200":
+          description: List of detailed Products
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductDetailOutput'
+        "400":
+          description: Request malformed
+        "500":
+          description: Something really bad must have happened in our server
+components:
+  schemas:
+    ChangePaymentMethodInput:
+      required:
+      - customerId
+      - threadId
+      type: object
+      properties:
+        threadId:
+          minimum: 0
+          type: integer
+          format: int64
+        customerId:
+          minimum: 0
+          type: integer
+          format: int64
+        paymentMethod:
+          maxLength: 2
+          minLength: 0
+          type: string
+        creditInfo:
+          type: string
+        poId:
+          type: string
+    NewCustomerOutput:
+      type: object
+      properties:
+        customerId:
+          type: integer
+          format: int64
+        newCustomerOutputInJson:
+          type: string
+    NewCustomerInput:
+      required:
+      - poId
+      - threadId
+      type: object
+      properties:
+        threadId:
+          minimum: 0
+          type: integer
+          format: int64
+        billingAddr1:
+          type: string
+        billingAddr2:
+          type: string
+        billingCity:
+          type: string
+        billingCountry:
+          type: string
+        billingState:
+          type: string
+        billingZip:
+          type: string
+        businessInfo:
+          type: string
+        businessName:
+          type: string
+        contactEmail:
+          type: string
+        contactFName:
+          type: string
+        contactLName:
+          type: string
+        contactPhone:
+          type: string
+        creditInfo:
+          type: string
+        password:
+          type: string
+        paymentMethod:
+          maxLength: 2
+          minLength: 0
+          type: string
+        poId:
+          minimum: 0
+          type: integer
+          format: int64
+    NewProduct:
+      type: object
+      properties:
+        itemId:
+          type: integer
+          format: int64
+        itemTitle:
+          type: string
+        authorFName:
+          type: string
+        authorLName:
+          type: string
+    NewProductsOutput:
+      type: object
+      properties:
+        newProductsList:
+          type: array
+          items:
+            $ref: '#/components/schemas/NewProduct'
+        newProductsOutputInJson:
+          type: string
+    ProductDetailOutput:
+      type: object
+      properties:
+        detailedProductsList:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductDetailPojo'
+        productDetailOutputInJson:
+          type: string
+    ProductDetailPojo:
+      type: object
+      properties:
+        itemId:
+          type: integer
+          format: int64
+        itemTitle:
+          type: string
+        authorFName:
+          type: string
+        authorLName:
+          type: string
+        itemPubDate:
+          type: string
+          format: date-time
+        itemPublisher:
+          type: string
+        itemSubject:
+          type: string
+        itemDesc:
+          type: string
+        itemCost:
+          type: string
+        itemSrp:
+          type: string
+        itemAvail:
+          type: string
+        itemIsbn:
+          type: string
+        itemPage:
+          type: string
+        itemBacking:
+          type: string
+        itemDimensions:
+          type: string
+        imageBytes:
+          type: array
+          items:
+            type: string
+            format: byte
+    ProductDetailInput:
+      type: object
+      properties:
+        itemIds:
+          type: array
+          items:
+            type: integer
+            format: int64

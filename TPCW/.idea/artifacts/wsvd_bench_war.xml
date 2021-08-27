@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wsvd-bench:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>wsvd-bench</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="wsvd-bench-0.2.war">
+      <element id="artifact" artifact-name="wsvd-bench:war exploded" />
+    </root>
+  </artifact>
+</component>

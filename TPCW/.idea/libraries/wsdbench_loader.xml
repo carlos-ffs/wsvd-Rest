@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wsdbench-loader">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/install/wsdbench-loader.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

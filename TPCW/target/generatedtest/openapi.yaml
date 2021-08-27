@@ -1,0 +1,933 @@
+openapi: 3.0.1
+paths:
+  /swagger:
+    get:
+      operationId: getListingYaml
+      responses:
+        default:
+          description: default response
+          content:
+            application/yaml: {}
+  /swagger.{type}:
+    get:
+      operationId: getListing
+      parameters:
+      - name: type
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+            application/yaml: {}
+  /application.wadl/{path}:
+    get:
+      operationId: geExternalGrammar
+      parameters:
+      - name: path
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/xml: {}
+  /application.wadl:
+    get:
+      operationId: getWadl
+      responses:
+        default:
+          description: default response
+          content:
+            application/vnd.sun.wadl+xml: {}
+            application/xml: {}
+  /AdminUpdate/test:
+    get:
+      operationId: adminUpdate_Vx0
+      parameters:
+      - name: word
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*':
+              schema:
+                type: string
+  /AdminUpdate/adminUpdate_Vx0:
+    post:
+      operationId: adminUpdate_Vx0_1
+      parameters:
+      - name: i_id
+        in: query
+        schema:
+          type: integer
+          format: int32
+      - name: cost
+        in: query
+        schema:
+          type: number
+          format: double
+      - name: image
+        in: query
+        schema:
+          type: string
+      - name: thumbnail
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /AdminUpdate/adminUpdate_VxA:
+    post:
+      operationId: adminUpdate_VxA
+      parameters:
+      - name: i_id
+        in: query
+        schema:
+          type: integer
+          format: int32
+      - name: cost
+        in: query
+        schema:
+          type: number
+          format: double
+      - name: image
+        in: query
+        schema:
+          type: string
+      - name: thumbnail
+        in: query
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            '*/*': {}
+  /CreateNewCustomer/createNewCustomer_Vx0:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx0
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx078:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx078
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx103:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx103
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx113:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx113
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_Vx132:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_Vx132
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateNewCustomer/createNewCustomer_VxA:
+    post:
+      summary: "Create a new customer, c_id could be any number"
+      operationId: createNewCustomer_VxA
+      requestBody:
+        description: Customer object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        default:
+          description: The customer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "200":
+          description: Customer was created
+        "400":
+          description: Request malformed
+  /CreateShoppingCart/createShoppingCart_Vx0:
+    post:
+      summary: Create a new shopping cart
+      operationId: createShoppingCart_Vx0
+      requestBody:
+        description: Shopping cart object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CartAux'
+        required: true
+      responses:
+        "200":
+          description: Shopping cart was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartAux'
+        "400":
+          description: Request malformed
+  /CreateShoppingCart/createShoppingCart_VxA:
+    post:
+      summary: Create a new shopping cart
+      operationId: createShoppingCart_VxA
+      requestBody:
+        description: Shopping cart object in json
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CartAux'
+        required: true
+      responses:
+        "200":
+          description: Shopping cart was created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartAux'
+        "400":
+          description: Request malformed
+  /DoAuthorSearch/doAuthorSearch_Vx0:
+    get:
+      summary: Obtain all books where author has name (a_lname in database) equals
+        to String search_key
+      operationId: doAuthorSearch_Vx0
+      parameters:
+      - name: search_key
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books in json with author name equals to the search_key
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+        "404":
+          description: No books found for author with name equals to search_key
+        "500":
+          description: Something really bad must have happened in our server
+  /DoAuthorSearch/doAuthorSearch_VxA:
+    get:
+      summary: Obtain all books where author has name (a_lname in database) equals
+        to String search_key
+      operationId: doAuthorSearch_VxA
+      parameters:
+      - name: search_key
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books in json with author name equals to the search_key
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+        "404":
+          description: No books found for author with name equals to search_key
+        "500":
+          description: Something really bad must have happened in our server
+  /DoSubjectSearch/doSubjectSearch_Vx0:
+    get:
+      summary: Obtain all books where subject is (i_subject in database) equal to
+        String search_key
+      operationId: doSubjectSearch_Vx0
+      parameters:
+      - name: search_key
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books in json with subject equal to the search_key
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+        "404":
+          description: No books found for subject equals to search_key
+        "500":
+          description: Something really bad must have happened in our server
+  /DoSubjectSearch/doSubjectSearch_VxA:
+    get:
+      summary: Obtain all books where subject is (i_subject in database) equal to
+        String search_key
+      operationId: doSubjectSearch_VxA
+      parameters:
+      - name: search_key
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books in json with subject equal to the search_key
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+        "404":
+          description: No books found for subject equals to search_key
+        "500":
+          description: Something really bad must have happened in our server
+  /DoTitleSearch/doTitleSearch_Vx0:
+    get:
+      summary: Obtain all books where title is (i_title in database) equal to String
+        search_key
+      operationId: doTitleSearch_Vx0
+      parameters:
+      - name: search_key
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books in json with title equal to the search_key
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+        "404":
+          description: No books found for title equals to search_key (input)
+        "500":
+          description: Something really bad must have happened in our server
+  /DoTitleSearch/doTitleSearch_VxA:
+    get:
+      summary: Obtain all books where title is (i_title in database) equal to String
+        search_key
+      operationId: doTitleSearch_VxA
+      parameters:
+      - name: search_key
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books in json with title equal to the search_key
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+        "404":
+          description: No books found for title equals to search_key (input)
+        "500":
+          description: Something really bad must have happened in our server
+  /GetBestSellers/getBestSellers_Vx0:
+    get:
+      summary: Obtain all books where subject is (i_subject in database) equal to
+        String subject (input)
+      operationId: getBestSellers_Vx0
+      parameters:
+      - name: subject
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books (short information about the books) in json with
+            subject equal to the String subject (input)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ShortBook'
+        "404":
+          description: No books found for subject equals to input String subject
+        "500":
+          description: Something really bad must have happened in our server
+  /GetBestSellers/getBestSellers_VxA:
+    get:
+      summary: Obtain all books where subject is (i_subject in database) equal to
+        String subject (input)
+      operationId: getBestSellers_VxA
+      parameters:
+      - name: subject
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of books (short information about the books) in json with
+            subject equal to the String subject (input)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ShortBook'
+        "404":
+          description: No books found for subject equals to input String subject
+        "500":
+          description: Something really bad must have happened in our server
+  /GetCustomer/getCustomer_Vx0:
+    get:
+      summary: Get customer by UNAME (c_uname in database) in json
+      operationId: getCustomer_Vx0
+      parameters:
+      - name: UNAME
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: The customer object in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "404":
+          description: Customer not found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetCustomer/getCustomer_VxA:
+    get:
+      summary: Get customer by UNAME (c_uname in database) in json
+      operationId: getCustomer_VxA
+      parameters:
+      - name: UNAME
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: The customer object in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        "404":
+          description: Customer not found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetMostRecentOrder/getMostRecentOrder_Vx0:
+    get:
+      summary: Get most recent order by customer name (c_uname in database) where
+        customer name is equal to String c_uname (input)
+      operationId: getMostRecentOrder_Vx0
+      parameters:
+      - name: c_uname
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: The order object in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "404":
+          description: No recent order found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetMostRecentOrder/getMostRecentOrder_VxA:
+    get:
+      summary: Get most recent order by customer name (c_uname in database) where
+        customer name is equal to String c_uname (input)
+      operationId: getMostRecentOrder_VxA
+      parameters:
+      - name: c_uname
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: The order object in json
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        "404":
+          description: No recent order found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetNewProducts/getNewProducts_Vx0:
+    get:
+      summary: Obtain all most recent books where subject is (i_subject in database)
+        equal to String subject (input)
+      operationId: getNewProducts_Vx0
+      parameters:
+      - name: subject
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of most recent books (short information about the books)
+            in json with subject equal to the String subject (input)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ShortBook'
+        "404":
+          description: No books found for subject equals to input String subject
+        "500":
+          description: Something really bad must have happened in our server
+  /GetNewProducts/getNewProducts_VxA:
+    get:
+      summary: Obtain all most recent books where subject is (i_subject in database)
+        equal to String subject (input)
+      operationId: getNewProducts_VxA
+      parameters:
+      - name: subject
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of most recent books (short information about the books)
+            in json with subject equal to the String subject (input)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ShortBook'
+        "404":
+          description: No books found for subject equals to input String subject
+        "500":
+          description: Something really bad must have happened in our server
+  /GetPassword/getPassword_Vx0:
+    get:
+      summary: 'Get customer''s password where customer''s c_uname (customer name
+        in database) equals to C_UNAME (input) '
+      operationId: getPassword_Vx0
+      parameters:
+      - name: C_UNAME
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          description: The customer's password string
+        "404":
+          description: Customer with name equals to C_UNAME not found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetPassword/getPassword_VxA:
+    get:
+      summary: 'Get customer''s password where customer''s c_uname (customer name
+        in database) equals to C_UNAME (input) '
+      operationId: getPassword_VxA
+      parameters:
+      - name: C_UNAME
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          description: The customer's password string
+        "404":
+          description: Customer with name equals to C_UNAME not found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetUsername/getUserName_Vx0:
+    get:
+      summary: Get customer's username where customer's C_ID (input) equals to c_id
+        in database
+      operationId: getUserName_Vx0
+      parameters:
+      - name: C_ID
+        in: query
+        required: true
+        schema:
+          minimum: 0
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: The customer's username string
+        "404":
+          description: Customer with id equals to C_ID not found
+        "500":
+          description: Something really bad must have happened in our server
+  /GetUsername/getUserName_VxA:
+    get:
+      summary: Get customer's username where customer's C_ID (input) equals to c_id
+        in database
+      operationId: getUserName_VxA
+      parameters:
+      - name: C_ID
+        in: query
+        required: true
+        schema:
+          minimum: 0
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: The customer's username string
+        "404":
+          description: Customer with id equals to C_ID not found
+        "500":
+          description: Something really bad must have happened in our server
+components:
+  schemas:
+    Customer:
+      type: object
+      properties:
+        c_id:
+          type: integer
+          format: int32
+        c_uname:
+          type: string
+        c_passwd:
+          type: string
+        c_fname:
+          type: string
+        c_lname:
+          type: string
+        c_phone:
+          type: string
+        c_email:
+          type: string
+        c_since:
+          type: string
+          format: date-time
+        c_last_visit:
+          type: string
+          format: date-time
+        c_login:
+          type: string
+          format: date-time
+        c_expiration:
+          type: string
+          format: date-time
+        c_discount:
+          type: number
+          format: double
+        c_balance:
+          type: number
+          format: double
+        c_ytd_pmt:
+          type: number
+          format: double
+        c_birthdate:
+          type: string
+          format: date-time
+        c_data:
+          type: string
+        addr_id:
+          type: integer
+          format: int32
+        addr_street1:
+          type: string
+        addr_street2:
+          type: string
+        addr_city:
+          type: string
+        addr_state:
+          type: string
+        addr_zip:
+          type: string
+        addr_co_id:
+          type: integer
+          format: int32
+        co_name:
+          type: string
+        customerInJson:
+          type: string
+    CartAux:
+      type: object
+      properties:
+        I_ID:
+          type: integer
+          format: int32
+        ids:
+          type: array
+          items:
+            type: string
+        quantities:
+          type: array
+          items:
+            type: string
+        SHOPPING_ID:
+          type: integer
+          format: int32
+    Book:
+      type: object
+      properties:
+        i_id:
+          type: integer
+          format: int32
+        i_title:
+          type: string
+        i_pub_Date:
+          type: string
+          format: date-time
+        i_publisher:
+          type: string
+        i_subject:
+          type: string
+        i_desc:
+          type: string
+        i_related1:
+          type: integer
+          format: int32
+        i_related2:
+          type: integer
+          format: int32
+        i_related3:
+          type: integer
+          format: int32
+        i_related4:
+          type: integer
+          format: int32
+        i_related5:
+          type: integer
+          format: int32
+        i_thumbnail:
+          type: string
+        i_image:
+          type: string
+        i_srp:
+          type: number
+          format: double
+        i_cost:
+          type: number
+          format: double
+        i_avail:
+          type: string
+          format: date-time
+        i_isbn:
+          type: string
+        i_page:
+          type: integer
+          format: int32
+        i_backing:
+          type: string
+        i_dimensions:
+          type: string
+        a_id:
+          type: integer
+          format: int32
+        a_fname:
+          type: string
+        a_lname:
+          type: string
+    ShortBook:
+      type: object
+      properties:
+        i_id:
+          type: integer
+          format: int32
+        i_title:
+          type: string
+        a_fname:
+          type: string
+        a_lname:
+          type: string
+    Order:
+      type: object
+      properties:
+        o_id:
+          type: integer
+          format: int32
+        c_fname:
+          type: string
+        c_lname:
+          type: string
+        c_passwd:
+          type: string
+        c_uname:
+          type: string
+        c_phone:
+          type: string
+        c_email:
+          type: string
+        o_date:
+          type: string
+          format: date-time
+        o_subtotal:
+          type: number
+          format: double
+        o_tax:
+          type: number
+          format: double
+        o_total:
+          type: number
+          format: double
+        o_ship_type:
+          type: string
+        o_ship_date:
+          type: string
+          format: date-time
+        o_status:
+          type: string
+        bill_addr_street1:
+          type: string
+        bill_addr_street2:
+          type: string
+        bill_addr_state:
+          type: string
+        bill_addr_zip:
+          type: string
+        bill_co_name:
+          type: string
+        ship_addr_street1:
+          type: string
+        ship_addr_street2:
+          type: string
+        ship_addr_state:
+          type: string
+        ship_addr_zip:
+          type: string
+        ship_co_name:
+          type: string
+        cx_type:
+          type: string
+        order_lines:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderLine'
+        orderInJson:
+          type: string
+    OrderLine:
+      type: object
+      properties:
+        ol_i_id:
+          type: integer
+          format: int32
+        i_title:
+          type: string
+        i_publisher:
+          type: string
+        i_cost:
+          type: number
+          format: double
+        ol_qty:
+          type: integer
+          format: int32
+        ol_discount:
+          type: number
+          format: double
+        ol_comments:
+          type: string

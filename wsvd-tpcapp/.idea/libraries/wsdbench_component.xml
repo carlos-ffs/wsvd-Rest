@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wsdbench-component">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/installInMaven/wsdbench-component.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
